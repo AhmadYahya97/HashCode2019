@@ -56,6 +56,7 @@ Then if the image is horizontal, we will search for the image that maximizes the
 Each score will be divided by log(numberOfItsTags), so that the penalization isn't critical for similar values.
 
 ## Results
+<pre>
 File                         Score
 
 A - Example                    2
@@ -67,7 +68,7 @@ C - Memorable moments          1746
 D - Pet pictures               433602
 
 E - Shiny selfies              562089
-
+</pre>
 Total score = 1,222,217
 
 HashCodeExtendedRound Rank = 37 worldwide, 1st place in Palestine. 
