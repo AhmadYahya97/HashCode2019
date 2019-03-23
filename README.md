@@ -22,7 +22,7 @@ tags of the single photo it contains.
 For example, a slide containing a single horizontal photo with tags [cat, beach, sun],
 has tags [cat, beach, sun].
 
-If the slide contains two veical photos, the tags of the slide are all the tags present in
+If the slide contains two vertical photos, the tags of the slide are all the tags present in
 any or both of the two photos it contains.
 
 For example, a slide containing two vertical photos with tags [selfie, smile] for the
@@ -50,10 +50,10 @@ For two subsequent slides Si and Si+1, the interest factor is the minimum (the s
 ## Our Methodology
 First, we will search for the image that contains the least number of tags and start from it.
 
-Then if the image is horizontal, we will search for the image that maximizes the score between the two images, otherwise if it's vertical, we will search for the vertical image that maximizes the score between the two images, with a penalization to the image that contains alot of tags, so that it's left for other images.
+Then if the image is horizontal, we will search for the image that maximizes the score between the two images, otherwise if it's vertical, we will search for the vertical image that maximizes the score between the two images, with a penalization to the image that contains a lot of tags, so that it's left for other images.
 
 ### Penalization
-Each score will be divided by log(numberOfItsTags), so that the penalization isn't critical for similar values.
+Each score will be divided by log(numberOfItsTags) so that the penalization isn't critical for similar values.
 
 ## Results
 <pre>
